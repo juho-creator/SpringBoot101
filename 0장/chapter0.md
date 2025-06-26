@@ -36,7 +36,7 @@
       - 의존성을 받을 저장소 지정
       - 프로젝트 개발에 필요한 기능의 의존성 설정
 
-3. package를 생성한 후 [`SpringBootApplication 클래스`](https://github.com/juho-creator/SpringBoot101/blob/main/0%EC%9E%A5/chapter0_Springboot101/src/main/java/me/juhokim/springbootdeveloper/SpringBootDeveloperApplication.java)를 작성한다
+3. springbootdeveloper package를 생성한 후 [`SpringBootApplication 클래스`](https://github.com/juho-creator/SpringBoot101/blob/main/0%EC%9E%A5/chapter0_Springboot101/src/main/java/me/juhokim/springbootdeveloper/SpringBootDeveloperApplication.java)를 작성한다
 4. `resources` 폴더에 [`static/index.html`](https://github.com/juho-creator/SpringBoot101/blob/main/0%EC%9E%A5/chapter0_Springboot101/src/main/resources/static/index.html) 페이지를 생성한다.
 </br></br></br>
 
