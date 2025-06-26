@@ -45,16 +45,15 @@
 ## 왜 저자는 build.gradle에서 mavenCentral()을 사용했을까?
 MavenCentral에 대부분의 라이브러리들이 있음. </br>
 따라서 Gradle 빌드 도구를 사용하지만 라이브러리 다운로드하는 저장소만 Maven 빌드 도구에 있는 저장소 (MavenCentral)를 사용함.
+</br></br></br>
 
 
 
 ## Postman이란?
 사용자와 서버가 통신하기 위한 인터페이스 (API)를 번거롭게 웹 브라우저를 열지 않고 효율적으로 테스트 하기 위한 프로그램
+</br></br></br>
 
 
 ## 저자에게 깃허브 이슈로 질문하는 법
-1. 나와 같은 오류를 마주한 사람이 있었는지 closed issue 확인
+1. 나와 같은 오류를 마주한 사람이 있었는지 [closed issue](https://github.com/shinsunyoung/springboot-developer-2rd/issues) 확인
 2. 저자의 저장소에서 `[장 번호] 제목`으로 issue를 생성한다
-
-
-
