@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+
+    // 1. 프로젝트에 필요한 플러그인 추가
+    id 'org.springframework.boot' version '3.2.0' // 스프링 부트 플러그인
+    id 'io.spring.dependency-management' version '1.1.0' // 스프링의 의존성 관리 플러그인
+}
+
+group = 'me.juhokim'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '17' // 2. 컴파일 할떄 자바 버전 설정
+
+repositories {
+    // 3. 의존성을 받을 저장소 지정(왜 build.gradle에서 maven으로 받는거지? 저자는 분명 gradle이 추세라고 했는데)
+    mavenCentral()
+}
+
+dependencies {
+    // 4. 프로젝트 개발에 필요한 기능의 의존성 설정
+    implementation 'org.springframework.boot:spring-boot-starter-web' // 웹 관련 기능
+    implementation 'org.springframework.boot:spring-boot-starter-test' // 테스트 기능
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+
+
