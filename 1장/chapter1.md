@@ -33,7 +33,7 @@
 
 
 ### 백엔드 개발자의 업무
-![image](https://github.com/user-attachments/assets/dc585578-8d41-41fd-8173-87221c5b77d0)
+![image](https://github.com/user-attachments/assets/dc585578-8d41-41fd-8173-87221c5b77d0) </br>
 **1. 과제 할당**
 - 사업부, 마케팅, 개발팀에서 개발 과제를 할당한다
 - 개발자가 과제를 분석하기 시작한다
