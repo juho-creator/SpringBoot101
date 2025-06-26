@@ -30,15 +30,14 @@
 
 ## 스프링 부트3 프로젝트 만들기
 1. 인텔리제이(자바 통합 개발 환경)를 설치한다
-2. 프로젝트를 생성한 후 `build.gradle`파일을 아래와 같이 수정한다 :
+2. 프로젝트를 생성한 후 [`build.gradle`](https://github.com/juho-creator/SpringBoot101/blob/main/0%EC%9E%A5/chapter0_Springboot101/build.gradle)파일을 아래와 같이 수정한다 :
       - 프로젝트에 필요한 플러그인 추가
       - 컴파일 할때 자바 버전 설정
       - 의존성을 받을 저장소 지정
       - 프로젝트 개발에 필요한 기능의 의존성 설정
 
-3. package를 생성한 후 SpringBootApplication 클래스를 작성한다
-4. `resources` 폴더에 static/index.html 페이지를 생성한다
-5.  
+3. package를 생성한 후 [`SpringBootApplication 클래스`](https://github.com/juho-creator/SpringBoot101/blob/main/0%EC%9E%A5/chapter0_Springboot101/src/main/java/me/juhokim/springbootdeveloper/SpringBootDeveloperApplication.java)를 작성한다
+4. `resources` 폴더에 [`static/index.html`](https://github.com/juho-creator/SpringBoot101/blob/main/0%EC%9E%A5/chapter0_Springboot101/src/main/resources/static/index.html) 페이지를 생성한다.
 </br></br></br>
 
 
