@@ -12,8 +12,8 @@
 
 ```java
 public class A {
-    // A 클래스가 B 객체를 외부에서 주입받음 (DI)
-    @Autowired // 스프링 컨테이너가 빈 b를 관리함 (DI) 
+    // 스프링 컨테이너가 빈 b를 관리함 (IoC) 
+    @Autowired     // A 클래스가 B 객체를 외부에서 주입받음 (DI)
     private B b;
 }
 ```
