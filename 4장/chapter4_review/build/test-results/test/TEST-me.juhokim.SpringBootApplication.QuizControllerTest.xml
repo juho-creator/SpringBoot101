@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.juhokim.SpringBootApplication.QuizControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-07-02T04:12:00" hostname="DESKTOP-QBAQ7CB" time="2.025">
+  <properties/>
+  <testcase name="quiz(): GET /quiz?code=1 이면 응답 코드는 201,응답 본문은 Created!를 리턴한다." classname="me.juhokim.SpringBootApplication.QuizControllerTest" time="1.797"/>
+  <testcase name="quiz(): GET /quiz?code=2 이면 응답 코드는 400,응답 본문은 Bad Request!를 리턴한다." classname="me.juhokim.SpringBootApplication.QuizControllerTest" time="0.014"/>
+  <testcase name="quiz(): POST /quiz?code=1 이면 응답 코드는 403,응답 본문은 Forbidden!를 리턴한다." classname="me.juhokim.SpringBootApplication.QuizControllerTest" time="0.195"/>
+  <testcase name="quiz(): POST /quiz?code=2 이면 응답 코드는 200,응답 본문은 OK!를 리턴한다." classname="me.juhokim.SpringBootApplication.QuizControllerTest" time="0.011"/>
+  <system-out><![CDATA[13:11:47.461 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [me.juhokim.SpringBootApplication.QuizControllerTest]: QuizControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:11:47.879 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration me.juhokim.SpringBootApplication.SpringBootDeveloperApplication for test class me.juhokim.SpringBootApplication.QuizControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-07-02T13:11:49.439+09:00  INFO 18824 --- [    Test worker] m.j.S.QuizControllerTest                 : Starting QuizControllerTest using Java 17.0.11 with PID 18824 (started by me in C:\Users\me\Desktop\백엔드 공부자료\SpringBoot\chapter0\chapter4_review)
+2025-07-02T13:11:49.443+09:00  INFO 18824 --- [    Test worker] m.j.S.QuizControllerTest                 : No active profile set, falling back to 1 default profile: "default"
+2025-07-02T13:11:51.514+09:00  INFO 18824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-02T13:11:51.708+09:00  INFO 18824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interface.
+2025-07-02T13:11:52.983+09:00  INFO 18824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-02T13:11:53.617+09:00  INFO 18824 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:5aaf8ef0-383a-42a0-8df3-a605b0547552 user=SA
+2025-07-02T13:11:53.622+09:00  INFO 18824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-02T13:11:53.795+09:00  INFO 18824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-02T13:11:54.060+09:00  INFO 18824 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-02T13:11:54.194+09:00  INFO 18824 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-02T13:11:55.137+09:00  INFO 18824 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-02T13:11:57.705+09:00  INFO 18824 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists dream cascade 
+Hibernate: create table dream (id bigint not null, dream varchar(255) not null, primary key (id))
+2025-07-02T13:11:57.803+09:00  INFO 18824 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-02T13:11:58.955+09:00  WARN 18824 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-02T13:12:00.070+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:00.070+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:00.075+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-07-02T13:12:00.153+09:00  INFO 18824 --- [    Test worker] m.j.S.QuizControllerTest                 : Started QuizControllerTest in 11.68 seconds (process running for 15.568)
+2025-07-02T13:12:01.704+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:01.705+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:01.706+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-07-02T13:12:02.006+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:02.007+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:02.009+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-07-02T13:12:02.023+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:02.023+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:02.024+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-07-02T13:12:02.219+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:02.220+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:02.222+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

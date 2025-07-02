@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - QuizControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>QuizControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/me.juhokim.SpringBootApplication.html">me.juhokim.SpringBootApplication</a> &gt; QuizControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.017s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">quiz(): GET /quiz?code=1 이면 응답 코드는 201,응답 본문은 Created!를 리턴한다.</td>
+<td class="success">getQuiz1()</td>
+<td class="success">1.797s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">quiz(): GET /quiz?code=2 이면 응답 코드는 400,응답 본문은 Bad Request!를 리턴한다.</td>
+<td class="success">getQuiz2()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">quiz(): POST /quiz?code=1 이면 응답 코드는 403,응답 본문은 Forbidden!를 리턴한다.</td>
+<td class="success">postQuiz1()</td>
+<td class="success">0.195s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">quiz(): POST /quiz?code=2 이면 응답 코드는 200,응답 본문은 OK!를 리턴한다.</td>
+<td class="success">postQuiz2()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:11:47.461 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [me.juhokim.SpringBootApplication.QuizControllerTest]: QuizControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:11:47.879 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration me.juhokim.SpringBootApplication.SpringBootDeveloperApplication for test class me.juhokim.SpringBootApplication.QuizControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-07-02T13:11:49.439+09:00  INFO 18824 --- [    Test worker] m.j.S.QuizControllerTest                 : Starting QuizControllerTest using Java 17.0.11 with PID 18824 (started by me in C:\Users\me\Desktop\백엔드 공부자료\SpringBoot\chapter0\chapter4_review)
+2025-07-02T13:11:49.443+09:00  INFO 18824 --- [    Test worker] m.j.S.QuizControllerTest                 : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-07-02T13:11:51.514+09:00  INFO 18824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-02T13:11:51.708+09:00  INFO 18824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interface.
+2025-07-02T13:11:52.983+09:00  INFO 18824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-02T13:11:53.617+09:00  INFO 18824 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:5aaf8ef0-383a-42a0-8df3-a605b0547552 user=SA
+2025-07-02T13:11:53.622+09:00  INFO 18824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-02T13:11:53.795+09:00  INFO 18824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-02T13:11:54.060+09:00  INFO 18824 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-02T13:11:54.194+09:00  INFO 18824 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-02T13:11:55.137+09:00  INFO 18824 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-02T13:11:57.705+09:00  INFO 18824 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists dream cascade 
+Hibernate: create table dream (id bigint not null, dream varchar(255) not null, primary key (id))
+2025-07-02T13:11:57.803+09:00  INFO 18824 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-02T13:11:58.955+09:00  WARN 18824 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-02T13:12:00.070+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:00.070+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:00.075+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-07-02T13:12:00.153+09:00  INFO 18824 --- [    Test worker] m.j.S.QuizControllerTest                 : Started QuizControllerTest in 11.68 seconds (process running for 15.568)
+2025-07-02T13:12:01.704+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:01.705+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:01.706+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-07-02T13:12:02.006+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:02.007+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:02.009+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-07-02T13:12:02.023+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:02.023+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:02.024+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-07-02T13:12:02.219+09:00  INFO 18824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-02T13:12:02.220+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-02T13:12:02.222+09:00  INFO 18824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 2025. 7. 2. 오후 1:12:02</p>
+</div>
+</div>
+</body>
+</html>
