@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    # sql 표시
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true # sql 표시
+
+    # 테이블 생성 후에  data.sql 실행
+    defer-datasource-initialization: true

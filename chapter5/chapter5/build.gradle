@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.0'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'me.juhokim'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Setting up springboot web and test
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+    // Including JPA (linking java class with table)
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+
+    // Setting up lombok (setting getter, setter, constructor)
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+
+    // Setting up h2 (in memory database)
+    runtimeOnly 'com.h2database:h2'
+
+}
+
+test {
+    useJUnitPlatform()
+}
