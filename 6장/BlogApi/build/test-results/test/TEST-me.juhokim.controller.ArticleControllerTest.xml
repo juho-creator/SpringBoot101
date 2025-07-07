@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.juhokim.controller.ArticleControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-07-07T13:46:51" hostname="DESKTOP-QBAQ7CB" time="2.663">
+  <properties/>
+  <testcase name="getArticleTest()" classname="me.juhokim.controller.ArticleControllerTest" time="2.308"/>
+  <testcase name="deleteArticleTest()" classname="me.juhokim.controller.ArticleControllerTest" time="0.197"/>
+  <testcase name="getArticlesTest()" classname="me.juhokim.controller.ArticleControllerTest" time="0.031"/>
+  <testcase name="createArticleTest()" classname="me.juhokim.controller.ArticleControllerTest" time="0.116"/>
+  <system-out><![CDATA[22:46:40.243 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [me.juhokim.controller.ArticleControllerTest]: ArticleControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:46:40.610 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration me.juhokim.SpringBootDeveloperApplication for test class me.juhokim.controller.ArticleControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-07-07T22:46:41.783+09:00  INFO 18668 --- [    Test worker] m.j.controller.ArticleControllerTest     : Starting ArticleControllerTest using Java 17.0.11 with PID 18668 (started by me in C:\Users\me\Desktop\graduation_project\BlogPractice5)
+2025-07-07T22:46:41.788+09:00  INFO 18668 --- [    Test worker] m.j.controller.ArticleControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2025-07-07T22:46:43.699+09:00  INFO 18668 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-07T22:46:43.863+09:00  INFO 18668 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+2025-07-07T22:46:45.075+09:00  INFO 18668 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-07T22:46:45.670+09:00  INFO 18668 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:c8c115a6-ca38-4b9b-9c01-9e4555e4da52 user=SA
+2025-07-07T22:46:45.674+09:00  INFO 18668 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-07T22:46:45.807+09:00  INFO 18668 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-07T22:46:46.016+09:00  INFO 18668 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-07T22:46:46.158+09:00  INFO 18668 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-07T22:46:47.024+09:00  INFO 18668 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-07T22:46:49.405+09:00  INFO 18668 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-07T22:46:49.500+09:00  INFO 18668 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-07T22:46:50.692+09:00  WARN 18668 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-07T22:46:51.742+09:00  INFO 18668 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-07T22:46:51.743+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-07T22:46:51.751+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-07-07T22:46:51.835+09:00  INFO 18668 --- [    Test worker] m.j.controller.ArticleControllerTest     : Started ArticleControllerTest in 10.719 seconds (process running for 14.432)
+2025-07-07T22:46:53.275+09:00  INFO 18668 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-07T22:46:53.276+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-07T22:46:53.278+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-07-07T22:46:54.214+09:00  INFO 18668 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-07T22:46:54.214+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-07T22:46:54.216+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-07-07T22:46:54.413+09:00  INFO 18668 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-07T22:46:54.414+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-07T22:46:54.416+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-07-07T22:46:54.449+09:00  INFO 18668 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-07T22:46:54.450+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-07T22:46:54.452+09:00  INFO 18668 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
