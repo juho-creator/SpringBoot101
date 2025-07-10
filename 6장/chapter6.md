@@ -22,7 +22,7 @@
 # DTO vs DAO
 - **DTO** : 계층끼리 데이터를 교환하기 위해 사용하는 객체
 - **DAO** : 데이터베이스와 상호작용할때 사용하는 객체
-</br></br></br>
+</br>
 
 
 ### DTO를 사용하는 이유
@@ -30,7 +30,7 @@
 
 - 입력값 유효성 검사 ([회원가입시 비밀번호 유효성 검사](https://github.com/juho-creator/SpringBoot101/blob/main/6%EC%9E%A5/dto-practice/src/main/java/me/juhokim/dto/UserRequest.java))
 
-
+</br></br></br>
 
 
 
@@ -44,7 +44,7 @@
 ### 바인딩이란?
 - 외부 입력값 (Json)을 자바 객체 필드에 자동 매핑해주는 과정
 - Jackson은 getter가 없으면 DTO를 바인딩 못함
-
+</br></br></br>
 
 # 프로젝트 개발 과정
 1. DAO 작성하기 (빌더 패턴)
