@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Article List</h2>
+        <button onclick="location.href='/article/new'">Create</button>
+    </div>
+
+    <div th:each="article : ${articles}" class="article-card">
+        <h1 th:text="${article.title}"></h1>
+        <p th:text="${article.content}"></p>
+        <a th:href="@{/articles/{id}(id=${article.id})}">Read More</a>
+    </div>
+    <button type="button" onclick="location.href='/logout'">Logout</button>
+</div>
+    <script src="/js/test.js"></script>
+</body>
+</html>

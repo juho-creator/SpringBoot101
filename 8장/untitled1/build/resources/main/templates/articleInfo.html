@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Edit Article</h2>
+    </div>
+    <input type="hidden" th:value="${article.id}" id="article-id">
+    <label>Title</label>
+    <input type="text" th:value="${article.title}" id="article-title">
+    <label>Content</label>
+    <input type="text" th:value="${article.content}" id="article-content">
+    <div>
+        <button id="update-btn">Update</button>
+        <button id="delete-btn">Delete</button>
+    </div>
+</div>
+<script src="/js/test.js"></script>
+</body>
+</html>
