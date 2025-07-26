@@ -20,13 +20,33 @@
 ## 토큰의 구성
 <img width="346" height="112" alt="image" src="https://github.com/user-attachments/assets/c62e1d7d-aaee-44a1-a98a-c52178c68797" />
 
-```
-eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTM1MjI0MTQsImlzcyI6InRlc3RpbmdAZ21haWwuY29tIiwic3ViIjoiMTIzQDEyMyIsImV4cCI6MTc1MzUyMjQ3NH0.fhA_0c-OM6okABS9trs3VD314WbNQbz98Z1vGgflX_o
-```
+
 
 - **헤더** : 토큰 타입과 해시 알고리즘 정보를 담고 있음
-- **내용** : 토큰 내용 (claim)을 담고 있음
-- **서명** : 토큰 검증 용도 사용됨
+- **내용 (payload/body)** : 토큰 내용 (claim)을 담고 있음
+- **서명** : 토큰 검증 용도 사용됨. (헤더의 인코딩 값 + 내용의 인코딩 값 + 비밀키 => 해시값
+
+</br></br>
+
+### 예시
+
+```
+# 토큰  Base64Url(header).Base64(payload).signature
+
+eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTM1MjI0MTQsImlzcyI6InRlc3RpbmdAZ21haWwuY29tIiwic3ViIjoiMTIzQDEyMyIsImV4cCI6MTc1MzUyMjQ3NH0.fhA_0c-OM6okABS9trs3VD314WbNQbz98Z1vGgflX_o
+
+
+# secret_key
+
+1234qwerty
+
+
+# 여기서 서명은 header와 payload를 .으로 연결한 문자열을 secretKey로 HMAC-SHA256 해싱한 결과임
+signature = HMAC-SHA256(Base64Url(header) + "." + Base64Url(payload), secretKey)
+
+```
+
+
 
 </br></br></br>
 </br></br></br>
