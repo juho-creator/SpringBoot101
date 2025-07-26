@@ -5,6 +5,37 @@
 </br></br></br>
 
 
+## 토큰의 특징 
+- **무상태성 :** 인증 정보가 담겨있는 토큰은 클라이언트에 있으므로 서버에 저장할 필요가 없다
+- **확장성 :** 하나의 토큰으로 서버에 여러 요청을 보낼 수 있다
+- **무결성 :** 토큰읠 발급한 이후 내용을 변경할 수 없다
+</br>
+* JWT로 인증할떄 Http 요청 헤더 중 Authorization에 Bearer  + JWT 토큰값을 넣어 보낸다.
+
+<img width="835" height="258" alt="image" src="https://github.com/user-attachments/assets/8f9b0c88-1168-4e0a-93b3-ad8e0ee947e1" />
+
+</br></br></br>
+
+
+## 토큰의 구성
+<img width="346" height="112" alt="image" src="https://github.com/user-attachments/assets/c62e1d7d-aaee-44a1-a98a-c52178c68797" />
+
+```
+eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTM1MjI0MTQsImlzcyI6InRlc3RpbmdAZ21haWwuY29tIiwic3ViIjoiMTIzQDEyMyIsImV4cCI6MTc1MzUyMjQ3NH0.fhA_0c-OM6okABS9trs3VD314WbNQbz98Z1vGgflX_o
+```
+
+- **헤더** : 토큰 타입과 해시 알고리즘 정보를 담고 있음
+- **내용** : 토큰 내용 (claim)을 담고 있음
+- **서명** : 토큰 검증 용도 사용됨
+
+</br></br></br>
+</br></br></br>
+
+
+
+
+
+
 
 ## 리프레시와 액세스 토큰을 사용한 인증 과정 (처음 요청했을때)
 <img width="910" height="702" alt="image" src="https://github.com/user-attachments/assets/14b0710e-bc07-4e0b-93b4-44e3d491da2d" />
