@@ -99,10 +99,10 @@ Header: Authorization: Bearer aasdffb
 
 ## 쿠키란?
 - 해당 웹사이트의 서버에서 저장하는 작은 데이터
-<img width="981" height="616" alt="image" src="https://github.com/user-attachments/assets/90d3c39a-ed9d-480c-98e7-8dd28892339b" />
-1. 유저가 서버에 요청하면 쿠키를 보냄
-2. 브라우저가 쿠키 저장
-3. 다음 요청할 때 쿠키도 전송
+<img width="981" height="616" alt="image" src="https://github.com/user-attachments/assets/90d3c39a-ed9d-480c-98e7-8dd28892339b" /> </br>
+1. 유저가 서버에 요청하면 쿠키를 보냄 </br>
+2. 브라우저가 쿠키 저장 </br>
+3. 다음 요청할 때 쿠키도 전송 </br>
 4. 다음 번에 요청했을때 쿠키값을 이용해 사용자 로그인 상태를 유지함
    
    
