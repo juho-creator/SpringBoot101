@@ -91,8 +91,8 @@ Header: Authorization: Bearer aasdffb
 
 ### 4. 클라이언트 자격증명 승인 타입 (client credentials grant)
 - 컨텍스트 외부에서 액세스 토큰을 얻은 후 특정 리소스에 접근 요청함
-
-
+</br></br>
+</br></br>
 
 
 
