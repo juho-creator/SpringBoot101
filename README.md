@@ -13,8 +13,8 @@
 | [6장](https://github.com/juho-creator/SpringBoot101/blob/main/6%EC%9E%A5/chapter6.md)     | 📝 블로그 기획하고 API 만들기                                       | 2025.07.04 ~ 2025.07.08     |
 | [7장](https://github.com/juho-creator/SpringBoot101/blob/main/7%EC%9E%A5/chapter7.md)     | 🎨 블로그 화면 구성하기                                            | 2025.07.09 ~ 2025.07.11     |
 | [8장](https://github.com/juho-creator/SpringBoot101/blob/main/8%EC%9E%A5/chapter8.md)     | 🔐 스프링 시큐리티로 로그인/로그아웃, 회원 가입 구현하기              | 2025.07.18 ~ 2025.07.21     |
-| 9장     | 🔑 JWT로 로그인/로그아웃 구현하기                                   |      |
-| 10장    | 🌐 OAuth2로 로그인/로그아웃 구현하기                                |      |
+| [9장](https://github.com/juho-creator/SpringBoot101/blob/main/9%EC%9E%A5/chapter9.md)     | 🔑 JWT로 로그인/로그아웃 구현하기                                   |   2025.07.24 ~ 2025.07.26  |
+| [10장](https://github.com/juho-creator/SpringBoot101/blob/main/10%EC%9E%A5/chapter10.md)    | 🌐 OAuth2로 로그인/로그아웃 구현하기                                |      
 | 11장    | ☁️ AWS에 프로젝트 배포하기                                          |      |
 | 12장    | 🔁 CI/CD 도입하기                                                  |      |
 
