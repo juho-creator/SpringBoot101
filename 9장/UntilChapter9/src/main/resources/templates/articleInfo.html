@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Article Info</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        #delete-btn {
+            background-color: #e74c3c;
+            color: white;
+        }
+        #update-btn {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <input type="hidden" id="article-id" th:value="${article.id}">
+    <input type="text" id="article-title" th:value="${article.title}">
+    <input type="text" id="article-content" th:value="${article.content}">
+    <div>
+        <button id="delete-btn">Delete</button>
+        <button id="update-btn">Update</button>
+    </div>
+</div>
+<script src="/js/test.js"></script>
+</body>
+</html>
