@@ -14,14 +14,15 @@
 | [7장](https://github.com/juho-creator/SpringBoot101/blob/main/7%EC%9E%A5/chapter7.md)     | 🎨 블로그 화면 구성하기                                            | 2025.07.09 ~ 2025.07.11     |
 | [8장](https://github.com/juho-creator/SpringBoot101/blob/main/8%EC%9E%A5/chapter8.md)     | 🔐 스프링 시큐리티로 로그인/로그아웃, 회원 가입 구현하기              | 2025.07.18 ~ 2025.07.21     |
 | [9장](https://github.com/juho-creator/SpringBoot101/blob/main/9%EC%9E%A5/chapter9.md)     | 🔑 JWT로 로그인/로그아웃 구현하기                                   |   2025.07.24 ~ 2025.07.26  |
-| [10장](https://github.com/juho-creator/SpringBoot101/blob/main/10%EC%9E%A5/chapter10.md)    | 🌐 OAuth2로 로그인/로그아웃 구현하기                                |      
-| 11장    | ☁️ AWS에 프로젝트 배포하기                                          |      |
-| 12장    | 🔁 CI/CD 도입하기                                                  |      |
+| [10장](https://github.com/juho-creator/SpringBoot101/blob/main/10%EC%9E%A5/chapter10.md)    | 🌐 OAuth2로 로그인/로그아웃 구현하기                                |  2025.08.04 ~ 2025.08.06 |    
+| [11장](https://github.com/juho-creator/SpringBoot101/blob/main/11%EC%9E%A5/chapter11.md)    | ☁️ AWS에 프로젝트 배포하기                                          |   2025.08.06   |
+| [12장](https://github.com/juho-creator/SpringBoot101/blob/main/12%EC%9E%A5/chapter12.md)    | 🔁 CI/CD 도입하기                                                  |    2025.08.06  |
+| 개인 프로젝트 | 💾  DevMemories | 2025.08.06 | 
 
 
  </br></br>
 **예상했던 학습 종료일** : 2025.07.02 </br>
-**실제 학습 종료일** : [진행중..]
+**실제 학습 종료일** : 2025.08.06 (추후 스프링부트가 필요할때 9장 복습)
 </br> </br>
 
 ## 참고문헌
