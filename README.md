@@ -17,7 +17,7 @@
 | [10장](https://github.com/juho-creator/SpringBoot101/blob/main/10%EC%9E%A5/chapter10.md)    | 🌐 OAuth2로 로그인/로그아웃 구현하기                                |  2025.08.04 ~ 2025.08.06 |    
 | [11장](https://github.com/juho-creator/SpringBoot101/blob/main/11%EC%9E%A5/chapter11.md)    | ☁️ AWS에 프로젝트 배포하기                                          |   2025.08.06   |
 | [12장](https://github.com/juho-creator/SpringBoot101/blob/main/12%EC%9E%A5/chapter12.md)    | 🔁 CI/CD 도입하기                                                  |    2025.08.06  |
-| 개인 프로젝트 | 💾  DevMemories | 2025.08.06 | 
+| [개인 프로젝트](https://github.com/juho-creator/devMemories) | 💾  DevMemories | 2025.08.06 ~ | 
 
 
  </br></br>
